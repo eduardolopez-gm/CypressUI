@@ -1,0 +1,22 @@
+{
+  "name": "cy-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint cypress/e2e/**/*.cy.js",
+    "lint:fix": "npx eslint --fix cypress/e2e/**/*.cy.js",
+    "cy:open": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "Eduardo Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-cypress": "^2.15.1"
+  }
+}
