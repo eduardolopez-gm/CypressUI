@@ -7,7 +7,9 @@
     "lint": "npx eslint cypress/e2e/**/*.cy.js",
     "lint:fix": "npx eslint --fix cypress/e2e/**/*.cy.js",
     "cy:open": "npx cypress open",
-    "cy:run:report": "cypress run --spec cypress/e2e/**/** --browser chrome"
+    "cy:run:report": "cypress run --spec cypress/e2e/**/** --browser chrome",
+    "smoke:tests": "npx cypress run --env grepTags=smoke",
+    "regression:tests": "npx cypress run --env grepTags=regression"
   },
   "keywords": [],
   "author": "Eduardo Lopez",
@@ -16,6 +18,7 @@
     "cypress": "^13.7.0"
   },
   "devDependencies": {
+    "@cypress/grep": "^4.0.1",
     "cypress-mochawesome-reporter": "^3.8.2",
     "eslint": "^8.57.0",
     "eslint-config-google": "^0.14.0",

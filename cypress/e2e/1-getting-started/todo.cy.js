@@ -20,7 +20,7 @@ describe('example to-do app', () => {
     cy.visit('https://example.cypress.io/todo')
   })
 
-  it('displays two todo items by default', () => {
+  it('displays two todo items by default', {tags: ['smoke', 'regression']}, () => {
     // We use the `cy.get()` command to get all elements that match the selector.
     // Then, we use `should` to assert that there are two matched items,
     // which are the two default items.
@@ -34,7 +34,7 @@ describe('example to-do app', () => {
     cy.get('.todo-list li').last().should('have.text', 'Walk the dog')
   })
 
-  it('can add new todo items', () => {
+  it('can add new todo items', {tags: 'smoke'}, () => {
     // We'll store our item text in a variable so we can reuse it
     const newItem = 'Feed the cat'
 
@@ -79,7 +79,7 @@ describe('example to-do app', () => {
       .should('have.class', 'completed')
   })
 
-  context('with a checked task', () => {
+  context('with a checked task', {tags: ['smoke', 'regression']}, () => {
     beforeEach(() => {
       // We'll take the command we used above to check off an element
       // Since we want to perform multiple tests that start with checking
@@ -91,7 +91,7 @@ describe('example to-do app', () => {
         .check()
     })
 
-    it('can filter for uncompleted tasks', () => {
+    it('can filter for uncompleted tasks',{tags: 'regression'}, () => {
       // We'll click on the "active" button in order to
       // display only incomplete items
       cy.contains('Active').click()
