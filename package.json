@@ -1,12 +1,13 @@
 {
   "name": "cy-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "A boilerplate cypress framework to explore its capabilities",
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint cypress/e2e/**/*.cy.js",
     "lint:fix": "npx eslint --fix cypress/e2e/**/*.cy.js",
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cy:run:report": "cypress run --spec cypress/e2e/**/** --browser chrome"
   },
   "keywords": [],
   "author": "Eduardo Lopez",
@@ -15,6 +16,7 @@
     "cypress": "^13.7.0"
   },
   "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2",
     "eslint": "^8.57.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-cypress": "^2.15.1"
