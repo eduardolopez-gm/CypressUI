@@ -7,7 +7,11 @@
     "lint": "npx eslint cypress/e2e/**/*.cy.js",
     "lint:fix": "npx eslint --fix cypress/e2e/**/*.cy.js",
     "cy:open": "npx cypress open",
-    "cy:run:report": "cypress run --spec cypress/e2e/**/** --browser chrome"
+    "cy:run": "cypress run",
+    "cy:run:report": "cypress run --spec cypress/e2e/**/** --browser chrome",
+    "cy:parallel": "cypress-parallel -s cy:run -t 2 -d cypress/e2e/**/*.cy.js -r cypress-mochawesome-reporter -o 'cypressParallel=true'",
+    "generate:parallel:report": "generate-mochawesome-report --set-exit-code",
+    "parallel:report": "npm run cy:parallel && npm run generate:parallel:report"
   },
   "keywords": [],
   "author": "Eduardo Lopez",
@@ -17,6 +21,7 @@
   },
   "devDependencies": {
     "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-parallel": "^0.14.0",
     "eslint": "^8.57.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-cypress": "^2.15.1"

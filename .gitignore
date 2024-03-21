@@ -2,3 +2,9 @@ node_modules
 # Report files
 cypress/reports
 cypress/screenshots
+# Cypress parallel files
+cypress/.tmp
+cypress/parallel-weights.json
+runner-results
+
+
