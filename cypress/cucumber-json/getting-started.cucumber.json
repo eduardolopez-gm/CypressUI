@@ -1,0 +1,152 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "To-do app",
+    "line": 1,
+    "id": "to-do-app",
+    "tags": [],
+    "uri": "getting-started.feature",
+    "elements": [
+      {
+        "id": "to-do-app;displays-two-todo-items-by-default",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Displays two todo items by default",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open To-do app page",
+            "result": {
+              "status": "passed",
+              "duration": 1732000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see two items",
+            "result": {
+              "status": "passed",
+              "duration": 168000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "to-do-app;adds-a-new-todo-item",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Adds a new todo item",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open To-do app page",
+            "result": {
+              "status": "passed",
+              "duration": 816000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I add a new todo",
+            "result": {
+              "status": "passed",
+              "duration": 671000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see a new todo",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "to-do-app;can-check-off-an-item-as-completed",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Can check off an item as completed",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open To-do app page",
+            "result": {
+              "status": "passed",
+              "duration": 232000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I check a todo",
+            "result": {
+              "status": "passed",
+              "duration": 170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "todo should appear as completed",
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "to-do-app;check-links-to-other-pages",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Check links to other pages",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open To-do app page",
+            "result": {
+              "status": "passed",
+              "duration": 221000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I navigate to other pages",
+            "result": {
+              "status": "passed",
+              "duration": 6385000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
