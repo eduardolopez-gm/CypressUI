@@ -22,7 +22,7 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 1732000000
+              "duration": 1466000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I should see two items",
             "result": {
               "status": "passed",
-              "duration": 168000000
+              "duration": 102000000
             }
           }
         ]
@@ -52,7 +52,7 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 816000000
+              "duration": 423000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I add a new todo",
             "result": {
               "status": "passed",
-              "duration": 671000000
+              "duration": 600000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I should see a new todo",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 22000000
             }
           }
         ]
@@ -92,7 +92,7 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 232000000
+              "duration": 586000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "I check a todo",
             "result": {
               "status": "passed",
-              "duration": 170000000
+              "duration": 165000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "todo should appear as completed",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 23000000
             }
           }
         ]
@@ -132,7 +132,7 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 221000000
+              "duration": 239000000
             }
           },
           {
@@ -142,7 +142,47 @@
             "name": "I navigate to other pages",
             "result": {
               "status": "passed",
-              "duration": 6385000000
+              "duration": 7609000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "to-do-app;check-a11y",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Check A11y",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open To-do app page",
+            "result": {
+              "status": "passed",
+              "duration": 709000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I inject a11y tests",
+            "result": {
+              "status": "passed",
+              "duration": 793000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see no a11y violations",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: 3 accessibility violations were detected: expected 3 to equal 0\n    at Context.eval (node_modules/cypress-axe/dist/index.js:100:0)"
             }
           }
         ]

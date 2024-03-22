@@ -36,10 +36,16 @@ Then('todo should appear as completed', ()=>{
 
 Then('I navigate to other pages', ()=>{
     cy.get('a').each(page => {
-        cy.log(page.prop)
         cy.request(page.prop('href')).
         then(response => {
             expect(response.status).eq(200)
         })
         })
 }) 
+
+When('I inject a11y tests', ()=>{
+    cy.injectAxe()
+})
+Then('I should see no a11y violations', ()=>{
+    cy.checkA11y()
+})

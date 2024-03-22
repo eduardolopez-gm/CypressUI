@@ -16,3 +16,7 @@ Feature: To-do app
 
   Scenario: Check links to other pages
     Then I navigate to other pages
+  
+  Scenario: Check A11y 
+    When I inject a11y tests
+    Then I should see no a11y violations

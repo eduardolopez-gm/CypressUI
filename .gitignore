@@ -2,3 +2,5 @@ node_modules
 # Report files
 cypress/reports
 cypress/screenshots
+cypress/cucumber-json/getting-started.cucumber.json
+
