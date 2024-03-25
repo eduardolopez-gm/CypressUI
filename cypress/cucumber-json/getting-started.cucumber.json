@@ -22,7 +22,7 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 1466000000
+              "duration": 1119000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I should see two items",
             "result": {
               "status": "passed",
-              "duration": 102000000
+              "duration": 151000000
             }
           }
         ]
@@ -52,7 +52,7 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 423000000
+              "duration": 284000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I add a new todo",
             "result": {
               "status": "passed",
-              "duration": 600000000
+              "duration": 429000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I should see a new todo",
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 19000000
             }
           }
         ]
@@ -92,7 +92,7 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 586000000
+              "duration": 194000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "I check a todo",
             "result": {
               "status": "passed",
-              "duration": 165000000
+              "duration": 128000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "todo should appear as completed",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 16000000
             }
           }
         ]
@@ -132,7 +132,7 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 243000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "I navigate to other pages",
             "result": {
               "status": "passed",
-              "duration": 7609000000
+              "duration": 5946000000
             }
           }
         ]
@@ -162,7 +162,7 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 709000000
+              "duration": 441000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "I inject a11y tests",
             "result": {
               "status": "passed",
-              "duration": 793000000
+              "duration": 251000000
             }
           },
           {
