@@ -10,9 +10,14 @@
       {
         "id": "to-do-app;displays-two-todo-items-by-default",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 7,
         "name": "Displays two todo items by default",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 6
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -22,17 +27,17 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 1732000000
+              "duration": 5007000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
+            "line": 8,
             "name": "I should see two items",
             "result": {
               "status": "passed",
-              "duration": 168000000
+              "duration": 378000000
             }
           }
         ]
@@ -40,7 +45,7 @@
       {
         "id": "to-do-app;adds-a-new-todo-item",
         "keyword": "Scenario",
-        "line": 9,
+        "line": 10,
         "name": "Adds a new todo item",
         "tags": [],
         "type": "scenario",
@@ -52,27 +57,27 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 816000000
+              "duration": 1305000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 10,
+            "line": 11,
             "name": "I add a new todo",
             "result": {
               "status": "passed",
-              "duration": 671000000
+              "duration": 2904000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "I should see a new todo",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 86000000
             }
           }
         ]
@@ -80,9 +85,14 @@
       {
         "id": "to-do-app;can-check-off-an-item-as-completed",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 15,
         "name": "Can check off an item as completed",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 14
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -92,27 +102,27 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 232000000
+              "duration": 709000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 14,
+            "line": 16,
             "name": "I check a todo",
             "result": {
               "status": "passed",
-              "duration": 170000000
+              "duration": 338000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
+            "line": 17,
             "name": "todo should appear as completed",
             "result": {
               "status": "passed",
-              "duration": 19000000
+              "duration": 24000000
             }
           }
         ]
@@ -120,9 +130,14 @@
       {
         "id": "to-do-app;check-links-to-other-pages",
         "keyword": "Scenario",
-        "line": 17,
+        "line": 19,
         "name": "Check links to other pages",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 18
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -132,17 +147,17 @@
             "name": "I open To-do app page",
             "result": {
               "status": "passed",
-              "duration": 221000000
+              "duration": 268000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 20,
             "name": "I navigate to other pages",
             "result": {
               "status": "passed",
-              "duration": 6385000000
+              "duration": 10169000000
             }
           }
         ]

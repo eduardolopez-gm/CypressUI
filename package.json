@@ -7,7 +7,8 @@
     "lint": "npx eslint cypress/e2e/**/*.cy.js",
     "lint:fix": "npx eslint --fix cypress/e2e/**/*.cy.js",
     "cy:open": "npx cypress open",
-    "cy:run:cucumber": "cypress run --spec **/*.feature && node cucumber-html-report.js"
+    "cy:run:cucumber": "cypress run && node cucumber-html-report.js",
+    "smoke:tests": "cypress run -e TAGS=\"@smoke\""
   },
   "keywords": [],
   "author": "Eduardo Lopez",
