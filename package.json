@@ -4,8 +4,8 @@
   "description": "A boilerplate cypress framework to explore its capabilities",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint cypress/e2e/**/*.cy.js",
-    "lint:fix": "npx eslint --fix cypress/e2e/**/*.cy.js",
+    "lint": "npx eslint cypress/e2e/**/*.cy.{js,ts}",
+    "lint:fix": "npx eslint --fix cypress/e2e/**/*.cy.{js,ts}",
     "cy:open": "npx cypress open",
     "cy:run:report": "cypress run --spec cypress/e2e/**/** --browser chrome"
   },
@@ -13,7 +13,7 @@
   "author": "Eduardo Lopez",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.7.0"
+    "cypress": "^13.7.2"
   },
   "devDependencies": {
     "cypress-mochawesome-reporter": "^3.8.2",
