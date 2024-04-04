@@ -4,8 +4,9 @@
   "description": "A boilerplate cypress framework to explore its capabilities",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint cypress/e2e/**/*.cy.{js,ts}",
-    "lint:fix": "npx eslint --fix cypress/e2e/**/*.cy.{js,ts}",
+    "lint": "npx eslint cypress/e2e/**/*.cy.ts",
+    "lint:fix": "npx eslint --fix cypress/e2e/**/*.cy.ts",
+    "prettier": "prettier cypress/e2e/**/*.cy.ts --write",
     "cy:open": "npx cypress open",
     "cy:run:report": "cypress run --spec cypress/e2e/**/** --browser chrome"
   },
@@ -17,9 +18,12 @@
   },
   "devDependencies": {
     "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-plugin-api": "^2.11.1",
     "eslint": "^8.57.0",
     "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-cypress": "^2.15.1",
+    "prettier": "^3.2.5",
     "typescript": "^5.4.3"
   }
 }
