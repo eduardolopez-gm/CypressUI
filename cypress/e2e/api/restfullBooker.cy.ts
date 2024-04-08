@@ -70,7 +70,7 @@ describe("Test Suite for Restful Booker", () => {
         });
       });
     });
-    it.only("Get 1 booking id", () => {
+    it("Get 1 booking id", () => {
       cy.api({
         method: "GET",
         url: "/booking",
@@ -93,7 +93,7 @@ describe("Test Suite for Restful Booker", () => {
         });
       });
     });
-    it.only("Get 1 booking id filter by check in date", () => {
+    it("Get 1 booking id filter by check in date", () => {
       cy.api({
         method: "GET",
         url: "/booking",
