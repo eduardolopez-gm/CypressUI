@@ -1,0 +1,108 @@
+{
+  "auth": {
+    "type": "object",
+    "properties": {
+      "token": {
+        "type": "string"
+      }
+    },
+    "required": ["token"]
+  },
+  "bookingFilterByName": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "bookingid": {
+          "type": "number"
+        }
+      },
+      "required": ["bookingid"]
+    }
+  },
+  "bookkingFilterById": {
+    "type": "object",
+    "properties": {
+      "firstname": {
+        "type": "string"
+      },
+      "lastname": {
+        "type": "string"
+      },
+      "totalprice": {
+        "type": "number"
+      },
+      "depositpaid": {
+        "type": "boolean"
+      },
+      "bookingdates": {
+        "type": "object",
+        "properties": {
+          "checkin": {
+            "type": "string"
+          },
+          "checkout": {
+            "type": "string"
+          }
+        },
+        "required": ["checkin", "checkout"]
+      }
+    },
+    "required": [
+      "firstname",
+      "lastname",
+      "totalprice",
+      "depositpaid",
+      "bookingdates"
+    ]
+  },
+  "createBooking": {
+    "type": "object",
+    "properties": {
+      "bookingid": {
+        "type": "number"
+      },
+      "booking": {
+        "type": "object",
+        "properties": {
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "totalprice": {
+            "type": "number"
+          },
+          "depositpaid": {
+            "type": "boolean"
+          },
+          "bookingdates": {
+            "type": "object",
+            "properties": {
+              "checkin": {
+                "type": "string"
+              },
+              "checkout": {
+                "type": "string"
+              }
+            },
+            "required": ["checkin", "checkout"]
+          },
+          "additionalneeds": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "firstname",
+          "lastname",
+          "totalprice",
+          "depositpaid",
+          "bookingdates",
+          "additionalneeds"
+        ]
+      }
+    },
+    "required": ["bookingid", "booking"]
+  }
+}
