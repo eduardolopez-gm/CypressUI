@@ -35,7 +35,7 @@ describe("Test Suite for Restful Booker", () => {
     });
   });
   context("/booking endpoint", () => {
-    it.skip("Get All Bookings", () => {
+    it("Get All Bookings", () => {
       cy.api({
         method: "GET",
         url: "/booking",
